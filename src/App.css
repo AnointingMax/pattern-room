@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #471bff;
+	--secondary-color: #eef2ff;
+	/* --gray: rgb(73, 84, 108); */
+	--light-gray: #f6f6f9;
+	--white: #f9f9f9;
+	--black: #36383f;
+	--gray: #85888c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+	font-size: 62.5%;
+	font-family: "Aeonik Regular", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+	max-width: 1680px;
+	margin-inline: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+blockquote,
+dl,
+dd {
+	margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-size: 1.6rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border-color: none;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 58.25%;
+	}
+}
+/* Header */
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+/* Logo */
+.logo {
+	display: inline-block;
+	color: black;
+	font-size: 60px;
+	margin-left: 10px;
+}
+
+/* Nav menu */
+.nav {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+.menu a,
+.menu p {
+	display: block;
+	padding: 30px;
+	color: black;
+}
+
+.nav {
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
+}
+
+/* Sub nav */
+.subnav-content {
+	width: 100%;
+	z-index: 1;
+	padding: 5px 0;
+	border: 1px solid black;
+	display: none;
+}
+.subnav-content a {
+	color: black;
+	text-decoration: none;
+	padding: 0;
+	padding: 10px 0;
+	text-align: center;
+}
+.subnav:hover .subnav-content {
+	display: block;
+}
+
+/* Menu Icon */
+
+.hamb {
+	cursor: pointer;
+	float: right;
+	padding: 40px 20px;
+}
+
+.hamb-line {
+	background: black;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+	background: black;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	width: 100%;
+}
+
+.hamb-line::before {
+	top: 5px;
+}
+
+.hamb-line::after {
+	top: -5px;
+}
+
+.side-menu {
+	display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav {
+	max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+	background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+	transform: rotate(45deg);
+	top: 0;
+}
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+	.nav {
+		max-height: none;
+		top: 0;
+		position: relative;
+		float: right;
+		width: fit-content;
+	}
+
+	.menu li {
+		float: left;
+	}
+
+	.hamb {
+		display: none;
+	}
+
+	/* Sub nav */
+	.subnav-content {
+		display: none;
+	}
+	.subnav-content a {
+		color: black;
+	}
 }
