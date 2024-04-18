@@ -137,7 +137,7 @@ const Home = (props: Props) => {
 				</div>
 			</div>
 			<div className="grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-[1.6rem] py-[6.4rem]">
-				<div className="bg-guide1 bg-no-repeat bg-cover flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
+				<div className="bg-guide1 bg-[#C4C1B8B2] bg-no-repeat bg-contain flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
 					<p className="text-gray-dark text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[125%]">
 						From creating custom size charts to optimizing fit across all sizes, we'll help you craft garments that delight your customers
 						and elevate your brand.
@@ -191,7 +191,7 @@ const Home = (props: Props) => {
 				</div>
 			</div>
 			<div className="grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] py-[6.4rem]">
-				<div className="flex flex-col p-[4rem] bg-[#F3F2EC] max-[740px]:order-2">
+				<div className="flex flex-col p-[2.5rem] md:p-[4rem] bg-[#F3F2EC] max-[740px]:order-2">
 					<p className="text-gray-light uppercase text-[1.4rem] font-bold mb-[1rem]">Reviews</p>
 					<p className="text-gray-dark text-[2.4rem] md:text-[2.8rem] lg:text-[3.6rem] leading-[119%] mb-[0.7rem]">
 						We Appreciate Your Feedback and Always Listen to Your Opinion

@@ -8,17 +8,7 @@ import {
 	AccordionItemPanel,
 	AccordionItemState,
 } from "react-accessible-accordion";
-import {
-	CarouselProvider,
-	Slider,
-	Slide,
-	Image,
-	Dot,
-	ButtonBack,
-	ButtonNext,
-	// ButtonBack, ButtonNext
-} from "pure-react-carousel";
-// import { LeftArrow, RightArrow } from "assets/svg";
+import { CarouselProvider, Slider, Slide, Image, Dot, ButtonBack, ButtonNext } from "pure-react-carousel";
 import product1 from "assets/product-1.png";
 import product2 from "assets/product-2.png";
 import product3 from "assets/product-3.png";
@@ -130,6 +120,26 @@ const Product = (props: Props) => {
 					</Accordion>
 				</div>
 			</div>
+			<div className="py-[5rem]">
+				<p className="text-[1.8rem] font-semibold text-black leading-[400%] text-center underline underline-offset-[1.5rem]">Description</p>
+				<div className="grid gap-[1.5rem] sm:grid-cols-3 [&>div]:bg-[#EDE5DE] [&>div:nth-child(4n+4)]:bg-[#FEFCF6] [&>div:nth-child(4n+3)]:bg-[#FEFCF6] [&>div]:px-[1.5rem] [&>div]:py-[1.2rem] [&>div]:text-[1.5rem] sm:[&>div:nth-child(2n)]:col-span-2 [&>div:nth-child(2n)]:text-[#666666] [&>div:nth-child(2n+1)]:uppercase [&>div:nth-child(2n+1)]:font-semibold [&>div:nth-child(2n+1)]:text-[#333333] max-sm:text-center">
+					<div>sizes</div>
+					<div>34-52</div>
+					<div>format</div>
+					<div>PDF A4, A0 and projector files</div>
+					<div>FABRIC</div>
+					<div>Medium to heavy weight fabrics for coating such as woolen, boiled wool, tweed ...</div>
+					<div>FABRIC REQUIREMENT & NOTIONS</div>
+					<div>- Main fabric (width 150 cm/60”) s.34-48: 3,6 m (3 yd 3 ft) </div>
+					<div>ADDITIONAL INFORMATION</div>
+					<div>
+						PDF pattern : 101 pattern pages (plan included) + 26 instructions pages. Also includes an A0 copyshop PDF and a projector
+						file. PDF is layered with separate sizes, it also includes stitching lines layers.
+					</div>
+					<div>FINISHED PROJECTS</div>
+					<div>Publish your sewing project on social media with the hashtag #AlmirallCoat.</div>
+				</div>
+			</div>
 			<div className="bleed border-y border-y-[#DFDFDF] pt-[6rem] max-md:pt-[3rem] pb-[6rem] grid gap-y-[2rem] md:grid-cols-3 px-[4rem] md:divide-x max-md:divide-y divide-[#DFDFDF] text-center">
 				<div className="flex flex-col items-center flex-1 px-[3rem] max-md:pt-[3rem]">
 					<WorldIcon className="mb-[2rem]" />
@@ -164,7 +174,7 @@ const Product = (props: Props) => {
 						totalSlides={8}
 						className="relative"
 						infinite
-						// isPlaying
+						isPlaying
 						visibleSlides={isMobile ? 1 : 3}
 						isIntrinsicHeight
 					>
