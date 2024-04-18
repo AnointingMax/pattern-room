@@ -18,7 +18,10 @@ module.exports = {
 				guide3: "url('/src/assets/guide-3.png')",
 				guide4: "url('/src/assets/guide-4.png')",
 			},
+			screens: {
+				extraSM: "475px",
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/container-queries")],
 };

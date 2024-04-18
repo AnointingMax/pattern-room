@@ -111,14 +111,14 @@ const Home = (props: Props) => {
 					<CarouselProvider
 						naturalSlideWidth={100}
 						naturalSlideHeight={45}
-						totalSlides={6}
+						totalSlides={8}
 						className="relative"
 						infinite
 						isPlaying
 						visibleSlides={isMobile ? 1 : 3}
 						isIntrinsicHeight
 					>
-						<Slider classNameTray="gap-[3rem]">
+						<Slider classNameTray="extraSM:gap-[3rem]">
 							{Array(8)
 								.fill("")
 								.map((_, index) => (

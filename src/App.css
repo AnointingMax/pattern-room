@@ -97,6 +97,11 @@ button:disabled {
 	color: #131313;
 }
 
+.product-accordion .accordion__button {
+	padding: 1.6rem 0rem !important;
+	font-size: 1.5rem;
+}
+
 .accordion__button:hover {
 	background-color: transparent !important;
 }
@@ -116,6 +121,10 @@ button:disabled {
 
 .accordion__icon {
 	transition: rotate 0.5s ease;
+}
+
+.product-accordion .accordion__icon.active {
+	rotate: 135deg;
 }
 
 .accordion__icon.active {
