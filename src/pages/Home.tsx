@@ -14,10 +14,14 @@ import {
 	AccordionItemState,
 } from "react-accessible-accordion";
 import { ReactNode } from "react";
+import { ProductCard } from "components";
+import { useMediaQuery } from "react-responsive";
 
 type Props = {};
 
 const Home = (props: Props) => {
+	const isMobile = useMediaQuery({ query: "(max-width: 475px)" });
+
 	return (
 		<>
 			<div className="bleed">
@@ -32,7 +36,7 @@ const Home = (props: Props) => {
 				>
 					<Slider>
 						<Slide className="max-md:min-h-[350px]" index={0}>
-							<Image isBgImage hasMasterSpinner src={hero1} />
+							<Image hasMasterSpinner src={hero1} />
 							<div className="absolute inset-0 flex items-center justify-center backdrop-brightness-[75%]">
 								<div className="z-50 text-center bg-[#372B0680] py-16 px-32 flex flex-col items-center gap-4">
 									<h1 className="text-[3.5rem] md:text-[4.4rem] lg:text-[5.2rem] text-white">New to Sewing</h1>
@@ -44,7 +48,7 @@ const Home = (props: Props) => {
 							</div>
 						</Slide>
 						<Slide className="max-md:min-h-[350px]" index={1}>
-							<Image isBgImage hasMasterSpinner src={hero1} />
+							<Image hasMasterSpinner src={hero1} />
 							<div className="absolute inset-0 flex items-center justify-center backdrop-brightness-[75%]">
 								<div className="z-50 text-center bg-[#372B0680] py-16 px-32 flex flex-col items-center gap-4">
 									<h1 className="text-[3.5rem] md:text-[4.4rem] lg:text-[5.2rem] text-white">New to Sewing</h1>
@@ -56,7 +60,7 @@ const Home = (props: Props) => {
 							</div>
 						</Slide>
 						<Slide className="max-md:min-h-[350px]" index={2}>
-							<Image isBgImage hasMasterSpinner src={hero1} />
+							<Image hasMasterSpinner src={hero1} />
 							<div className="absolute inset-0 flex items-center justify-center backdrop-brightness-[75%]">
 								<div className="z-50 text-center bg-[#372B0680] py-16 px-32 flex flex-col items-center gap-4">
 									<h1 className="text-[3.5rem] md:text-[4.4rem] lg:text-[5.2rem] text-white">New to Sewing</h1>
@@ -101,6 +105,37 @@ const Home = (props: Props) => {
 					</button>
 				</div>
 			</div>
+			<div className="py-[6rem] flex flex-col items-center">
+				<p className="text-[2.8rem] font-semibold text-gray-dark text-center mb-[2.4rem]">NEWEST ARRIVALS</p>
+				<div className="grid grid-cols-[repeat(auto-fit,_minmax(165px,_1fr))] min-[1001px]:grid-cols-[repeat(auto-fit,_minmax(290px,_1fr))] gap-[2.4rem] mb-[4rem] w-full">
+					<CarouselProvider
+						naturalSlideWidth={100}
+						naturalSlideHeight={45}
+						totalSlides={6}
+						className="relative"
+						infinite
+						isPlaying
+						visibleSlides={isMobile ? 1 : 3}
+						isIntrinsicHeight
+					>
+						<Slider classNameTray="gap-[3rem]">
+							{Array(8)
+								.fill("")
+								.map((_, index) => (
+									<Slide className="" key={index} index={index + 1}>
+										<ProductCard />
+									</Slide>
+								))}
+						</Slider>
+						<ButtonBack className="absolute p-5 bg-white rounded-full left-8 top-1/2 translate-y-[-50%] bg-gray">
+							<LeftArrow className="w-7 h-7 text-gray-light" />
+						</ButtonBack>
+						<ButtonNext className="absolute p-5 bg-white rounded-full bg-gray right-8 top-1/2 translate-y-[-50%]">
+							<RightArrow className="w-7 h-7 text-gray-light" />
+						</ButtonNext>
+					</CarouselProvider>
+				</div>
+			</div>
 			<div className="grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-[1.6rem] py-[6.4rem]">
 				<div className="bg-guide1 bg-no-repeat bg-cover flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
 					<p className="text-gray-dark text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[125%]">
@@ -120,6 +155,17 @@ const Home = (props: Props) => {
 						<div className="px-[2rem] py-[1rem] bg-[#FFFFFF80] text-[1.3rem] font-bold text-gray-dark w-fit">INSPIRATION</div>
 					</div>
 				</div>
+			</div>
+			<div className="py-[6rem] flex flex-col items-center">
+				<p className="text-[2.8rem] font-semibold text-gray-dark text-center mb-[2.4rem]">FEATURED PATTERNS</p>
+				<div className="grid grid-cols-[repeat(auto-fit,_minmax(165px,_1fr))] min-[1001px]:grid-cols-[repeat(auto-fit,_minmax(290px,_1fr))] gap-[2.4rem] mb-[4rem] w-full">
+					{Array(8)
+						.fill("")
+						.map((_, index) => (
+							<ProductCard key={index} />
+						))}
+				</div>
+				<button className="bg-black py-[1.6rem] px-[3.8rem] text-white">View All</button>
 			</div>
 			<div className="bleed border-y border-y-[#DFDFDF] pt-[6rem] max-md:pt-[3rem] pb-[6rem] grid gap-y-[2rem] md:grid-cols-3 px-[4rem] md:divide-x max-md:divide-y divide-[#DFDFDF] text-center">
 				<div className="flex flex-col items-center flex-1 px-[3rem] max-md:pt-[3rem]">
