@@ -17,6 +17,9 @@ module.exports = {
 				guide2: "url('/src/assets/guide-2.png')",
 				guide3: "url('/src/assets/guide-3.png')",
 				guide4: "url('/src/assets/guide-4.png')",
+				about1: "url('/src/assets/about-1.png')",
+				about2: "url('/src/assets/about-2.png')",
+				about3: "url('/src/assets/about-3.png')",
 			},
 			screens: {
 				extraSM: "475px",
