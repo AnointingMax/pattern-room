@@ -23,7 +23,7 @@ const CustomSelect = ({ label, labelClassNames, containerClassName, options, ...
 						</option>
 					))}
 				</select>
-				<DownArrowIcon className="absolute top-1/2 translate-y-[-50%] right-[1.4rem]" />
+				<DownArrowIcon className="absolute top-1/2 translate-y-[-50%] right-[1.4rem] w-9 h-9" />
 			</div>
 		</div>
 	);

@@ -85,3 +85,43 @@ button:disabled {
 		font-size: 58.25%;
 	}
 }
+
+.accordion__button {
+	padding: 2.8rem 0rem !important;
+	background-color: transparent !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	color: #131313;
+}
+
+.accordion__button:hover {
+	background-color: transparent !important;
+}
+
+.accordion__button::before {
+	display: none !important;
+}
+
+.accordion__item + .accordion__item {
+	border-top: none !important;
+}
+
+.accordion__item {
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.accordion__icon {
+	transition: rotate 0.5s ease;
+}
+
+.accordion__icon.active {
+	rotate: 180deg;
+}
+
+.accordion__panel {
+	padding: 0 20px 20px !important;
+}

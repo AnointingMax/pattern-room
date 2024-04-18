@@ -62,7 +62,7 @@ const BottomNav = (props: Props) => {
 					containerClassName="w-[350px] max-[425px]:w-full"
 					icon={<RightIcon />}
 				/>
-				<ul className="flex gap-8 items-center">
+				<ul className="flex items-center gap-8">
 					<li className="text-gray-light text-[1.4rem] leading-[150%] tracking-[2%]">
 						<Link to="/">
 							<TwitterIcon />
@@ -100,7 +100,7 @@ const BottomNav = (props: Props) => {
 					</li>
 				</ul>
 			</div>
-			<div className="flex items-center justify-between gap-12 border-t max-[500px]:flex-col border-[#D0D0D0] pt-16 min-[620px]:px-12">
+			<div className="flex items-center justify-between gap-12 border-t max-[550px]:flex-col border-[#D0D0D0] pt-16 min-[620px]:px-12">
 				<div className="flex gap-6">
 					<CustomSelect
 						label="Country/region"
@@ -119,7 +119,7 @@ const BottomNav = (props: Props) => {
 						]}
 					/>
 				</div>
-				<ul className="flex gap-8 items-center">
+				<ul className="flex items-center gap-8">
 					<li className="text-gray-light text-[1.4rem] leading-[150%] tracking-[2%]">
 						<Link to="/">
 							<VisaCardIcon />
