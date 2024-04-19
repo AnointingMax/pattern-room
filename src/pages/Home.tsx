@@ -30,7 +30,7 @@ const Home = (props: Props) => {
 					naturalSlideWidth={100}
 					naturalSlideHeight={45}
 					totalSlides={3}
-					className="relative flex flex-col my-auto mb-[4rem]"
+					className="relative flex flex-col my-auto mb-[4rem] hero"
 					infinite
 					isPlaying
 					isIntrinsicHeight

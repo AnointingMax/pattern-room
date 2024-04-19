@@ -120,9 +120,9 @@ const Product = (props: Props) => {
 					</Accordion>
 				</div>
 			</div>
-			<div className="py-[5rem]">
+			<div className="py-[5rem] flex flex-col items-center">
 				<p className="text-[1.8rem] font-semibold text-black leading-[400%] text-center underline underline-offset-[1.5rem]">Description</p>
-				<div className="grid gap-[1.5rem] sm:grid-cols-3 [&>div]:bg-[#EDE5DE] [&>div:nth-child(4n+4)]:bg-[#FEFCF6] [&>div:nth-child(4n+3)]:bg-[#FEFCF6] [&>div]:px-[1.5rem] [&>div]:py-[1.2rem] [&>div]:text-[1.5rem] sm:[&>div:nth-child(2n)]:col-span-2 [&>div:nth-child(2n)]:text-[#666666] [&>div:nth-child(2n+1)]:uppercase [&>div:nth-child(2n+1)]:font-semibold [&>div:nth-child(2n+1)]:text-[#333333] max-sm:text-center">
+				<div className="grid gap-[1.5rem] max-w-[1080px] sm:grid-cols-3 [&>div]:bg-[#EDE5DE] [&>div:nth-child(4n+4)]:bg-[#FEFCF6] [&>div:nth-child(4n+3)]:bg-[#FEFCF6] [&>div]:px-[1.5rem] [&>div]:py-[1.2rem] [&>div]:text-[1.5rem] sm:[&>div:nth-child(2n)]:col-span-2 [&>div:nth-child(2n)]:text-[#666666] [&>div:nth-child(2n+1)]:uppercase [&>div:nth-child(2n+1)]:font-semibold [&>div:nth-child(2n+1)]:text-[#333333] max-sm:text-center">
 					<div>sizes</div>
 					<div>34-52</div>
 					<div>format</div>

@@ -72,10 +72,10 @@ const TopNav = (props: Props) => {
 							Seasonal Collection Planning
 						</NavDropdown.Item>
 					</NavDropdown>
-					<Nav.Link href="/about" className="!text-[1.3rem]">
+					<Nav.Link as={Link} to="/about" className="!text-[1.3rem]">
 						About
 					</Nav.Link>
-					<Nav.Link href="/shop" className="!text-[1.3rem] nav-shop">
+					<Nav.Link as={Link} to="/shop" className="!text-[1.3rem] nav-shop">
 						Shop
 					</Nav.Link>
 				</Nav>

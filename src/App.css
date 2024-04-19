@@ -178,3 +178,30 @@ button:disabled {
 .dropdown-menu {
 	background-color: white !important;
 }
+
+.carousel.hero::before,
+.carousel.hero::after {
+	--height: 140px;
+
+	content: "";
+	position: absolute;
+	height: calc(var(--height) * 2);
+	background-color: white;
+	inset-inline: 0;
+	z-index: 9999999999999999999999;
+}
+.carousel.hero::before {
+	clip-path: ellipse(50% 10% at 50% 0%);
+	top: 0;
+}
+.carousel.hero::after {
+	bottom: 0;
+	clip-path: ellipse(50% 10% at 50% 100%);
+}
+
+@media (max-width: 768px) {
+	.carousel.hero::before,
+	.carousel.hero::after {
+		--height: 70px;
+	}
+}
