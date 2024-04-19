@@ -5,19 +5,24 @@ import Layout from "./layouts";
 import "./bootstrap-clone.css";
 
 function App() {
-	const router = createBrowserRouter([
+	const router = createBrowserRouter(
+		[
+			{
+				path: "/",
+				element: <Layout />,
+				children: [
+					{ index: true, element: <Home /> },
+					{ path: "shop", element: <Shop /> },
+					{ path: "shop/:productId", element: <Product /> },
+					{ path: "about", element: <About /> },
+					{ path: "guide", element: <Guide /> },
+				],
+			},
+		],
 		{
-			path: "/",
-			element: <Layout />,
-			children: [
-				{ index: true, element: <Home /> },
-				{ path: "shop", element: <Shop /> },
-				{ path: "shop/:productId", element: <Product /> },
-				{ path: "about", element: <About /> },
-				{ path: "guide", element: <Guide /> },
-			],
-		},
-	]);
+			basename: "/pattern-room",
+		}
+	);
 	return <RouterProvider router={router} />;
 }
 
