@@ -12,7 +12,7 @@ const CustomTextInput = ({ label, labelClassNames, icon, containerClassName, ...
 		<div className={containerClassName}>
 			{!!label && <label className={`text-gray-light text-[1.4rem] leading-[150%] tracking-[2%] mb-3 block ${labelClassNames}`}>{label}</label>}
 			<div className={`p-[1.4rem] flex border border-[#7D7D7D] items-center justify-between gap-4 text-gray-dark`}>
-				<input className="placeholder:text-gray-light  text-[1.4rem] tracking-[4%]" {...props} />
+				<input className="placeholder:text-gray-light flex-1 text-[1.4rem] tracking-[4%]" {...props} />
 				{icon}
 			</div>
 		</div>

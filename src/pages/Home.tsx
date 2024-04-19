@@ -16,6 +16,7 @@ import {
 import { ReactNode } from "react";
 import { ProductCard } from "components";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -43,7 +44,9 @@ const Home = (props: Props) => {
 									<p className="text-[1.6rem] text-white leading-[172%] tracking-[4%] max-w-[300px]">
 										Try the Row skirt Pattern, designed for true beginners
 									</p>
-									<button className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">Shop Now</button>
+									<Link to="/shop" className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">
+										Shop Now
+									</Link>
 								</div>
 							</div>
 						</Slide>
@@ -55,7 +58,9 @@ const Home = (props: Props) => {
 									<p className="text-[1.6rem] text-white leading-[172%] tracking-[4%] max-w-[300px]">
 										Try the Row skirt Pattern, designed for true beginners
 									</p>
-									<button className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">Shop Now</button>
+									<Link to="/shop" className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">
+										Shop Now
+									</Link>
 								</div>
 							</div>
 						</Slide>
@@ -67,15 +72,17 @@ const Home = (props: Props) => {
 									<p className="text-[1.6rem] text-white leading-[172%] tracking-[4%] max-w-[300px]">
 										Try the Row skirt Pattern, designed for true beginners
 									</p>
-									<button className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">Shop Now</button>
+									<Link to="/shop" className="border border-white p-[1.6rem] text-[1.6rem] tracking-[4%] text-white">
+										Shop Now
+									</Link>
 								</div>
 							</div>
 						</Slide>
 					</Slider>
-					<ButtonBack className="absolute p-5 text-white rounded-full left-8 top-1/2 translate-y-[-50%] bg-gray">
+					<ButtonBack className="absolute p-[1.25rem] text-white rounded-full left-8 top-1/2 translate-y-[-50%] bg-gray">
 						<LeftArrow />
 					</ButtonBack>
-					<ButtonNext className="absolute p-5 text-white rounded-full bg-gray right-8 top-1/2 translate-y-[-50%]">
+					<ButtonNext className="absolute p-[1.25rem] text-white rounded-full bg-gray right-8 top-1/2 translate-y-[-50%]">
 						<RightArrow />
 					</ButtonNext>
 				</CarouselProvider>
@@ -93,7 +100,9 @@ const Home = (props: Props) => {
 					<p className="max-w-[500px] text-wrap text-[2.4rem] lg:text-[3.6rem] text-white leading-tight">
 						Explore our curated digital patterns, crafted to inspire and elevate your projects.
 					</p>
-					<button className="border border-white py-[1.6rem] px-[5rem] rounded-lg text-[1.6rem] tracking-[4%] text-white">Shop Now</button>
+					<Link to="/shop" className="border border-white py-[1.6rem] px-[5rem] rounded-lg text-[1.6rem] tracking-[4%] text-white">
+						Shop Now
+					</Link>
 				</div>
 				<div className="bg-consultation bg-no-repeat bg-cover flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
 					<p className="text-white uppercase text-[1.4rem] font-bold">consultations</p>
@@ -122,23 +131,23 @@ const Home = (props: Props) => {
 							{Array(8)
 								.fill("")
 								.map((_, index) => (
-									<Slide className="" key={index} index={index + 1}>
+									<Slide key={index} index={index + 1}>
 										<ProductCard />
 									</Slide>
 								))}
 						</Slider>
-						<ButtonBack className="absolute p-5 bg-white rounded-full left-8 top-1/2 translate-y-[-50%] bg-gray">
+						<ButtonBack className="absolute p-[1.25rem] bg-white rounded-full left-8 top-1/2 translate-y-[-50%] bg-gray">
 							<LeftArrow className="w-7 h-7 text-gray-light" />
 						</ButtonBack>
-						<ButtonNext className="absolute p-5 bg-white rounded-full bg-gray right-8 top-1/2 translate-y-[-50%]">
+						<ButtonNext className="absolute p-[1.25rem] bg-white rounded-full bg-gray right-8 top-1/2 translate-y-[-50%]">
 							<RightArrow className="w-7 h-7 text-gray-light" />
 						</ButtonNext>
 					</CarouselProvider>
 				</div>
 			</div>
 			<div className="grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-[1.6rem] py-[6.4rem]">
-				<div className="bg-guide1 bg-[#C4C1B8B2] bg-no-repeat bg-contain flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
-					<p className="text-gray-dark text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[125%]">
+				<div className="bg-guide1 bg-no-repeat bg-contain flex gap-[3rem] flex-col items-center py-[5rem] px-[3rem] text-center rounded-lg">
+					<p className="text-gray-dark text-[2rem] md:text-[3rem] lg:text-[3.4rem] leading-[125%]">
 						From creating custom size charts to optimizing fit across all sizes, we'll help you craft garments that delight your customers
 						and elevate your brand.
 					</p>
@@ -165,7 +174,7 @@ const Home = (props: Props) => {
 							<ProductCard key={index} />
 						))}
 				</div>
-				<button className="bg-black py-[1.6rem] px-[3.8rem] text-white">View All</button>
+				<button className="bg-black py-[1.6rem] px-[3.8rem] text-[1.6rem] text-white">View All</button>
 			</div>
 			<div className="bleed border-y border-y-[#DFDFDF] pt-[6rem] max-md:pt-[3rem] pb-[6rem] grid gap-y-[2rem] md:grid-cols-3 px-[4rem] md:divide-x max-md:divide-y divide-[#DFDFDF] text-center">
 				<div className="flex flex-col items-center flex-1 px-[3rem] max-md:pt-[3rem]">

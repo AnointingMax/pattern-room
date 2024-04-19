@@ -30,14 +30,6 @@ const Guide = (props: Props) => {
 					<li>The pattern instructions in French, English and Spanish.</li>
 				</ol>
 			</div>
-			<div className="bg-black py-[6.4rem] text-white [&>*]:max-w-[720px] text-center flex items-center flex-col gap-[3rem]">
-				<p className="text-[2.8rem]">Our quality promise</p>
-				<p className="text-[1.8rem]">
-					Quality is never an accident. It is always the result of intelligent effort. We spend most of our time and energy for good design
-					and to achieve high quality. Every single det ail from material to technique is thought through with obsessive attention. If our
-					product doesn't satisfy you, we'll take it back.
-				</p>
-			</div>
 		</>
 	);
 };

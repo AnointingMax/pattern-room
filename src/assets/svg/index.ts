@@ -20,6 +20,7 @@ import { ReactComponent as ReturnIcon } from "./return.svg";
 import { ReactComponent as WorldIcon } from "./world.svg";
 import { ReactComponent as PadlockIcon } from "./padlock.svg";
 import { ReactComponent as AddIcon } from "./add.svg";
+import { ReactComponent as ConsultationIcon } from "./consultation.svg";
 
 export {
   BurgerIcon,
@@ -43,5 +44,5 @@ export {
   WorldIcon,
   PadlockIcon,
   UpArrowIcon,
-  AddIcon
+  AddIcon, ConsultationIcon
 }
