@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pattern-room/static/css/main.f86c9b51.css",
-    "main.js": "/pattern-room/static/js/main.fdbdeca5.js",
+    "main.js": "/pattern-room/static/js/main.9df387ed.js",
     "static/media/hero-1.png": "/pattern-room/static/media/hero-1.87866588991b1e0c9080.png",
     "static/media/youtube-placeholder.png": "/pattern-room/static/media/youtube-placeholder.714b60701137a030118d.png",
     "static/media/testimonials.png": "/pattern-room/static/media/testimonials.e9d5bef750f1f4bd515b.png",
@@ -43,10 +43,10 @@
     "static/media/up-arrow.svg": "/pattern-room/static/media/up-arrow.9916dce7f26e9bfa14c3eae60a231375.svg",
     "static/media/add.svg": "/pattern-room/static/media/add.c2bfa58b63c4d2b3f31712d9ebd40e60.svg",
     "main.f86c9b51.css.map": "/pattern-room/static/css/main.f86c9b51.css.map",
-    "main.fdbdeca5.js.map": "/pattern-room/static/js/main.fdbdeca5.js.map"
+    "main.9df387ed.js.map": "/pattern-room/static/js/main.9df387ed.js.map"
   },
   "entrypoints": [
     "static/css/main.f86c9b51.css",
-    "static/js/main.fdbdeca5.js"
+    "static/js/main.9df387ed.js"
   ]
 }
