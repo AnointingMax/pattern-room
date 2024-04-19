@@ -11,7 +11,7 @@ const Layout = (props: Props) => {
 			<TopNav />
 			<Outlet />
 			<BottomNav />
-			<button className="flex items-center gap-3 text-white bg-[#01237D] fixed rounded-[60px] text-[1.6rem] font-semibold py-[1.4rem] px-[1.6rem] bottom-28 right-16">
+			<button className="flex items-center gap-3 z-50 text-white bg-[#01237D] fixed rounded-[60px] text-[1.6rem] font-semibold py-[1.4rem] px-[1.6rem] bottom-28 right-16">
 				<ConsultationIcon />
 				Book a consultation
 			</button>

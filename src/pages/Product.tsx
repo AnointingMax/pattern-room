@@ -28,7 +28,7 @@ const Product = (props: Props) => {
 					naturalSlideHeight={80}
 					totalSlides={6}
 					visibleSlides={1}
-					className="relative grid grid-cols-[auto,1fr] gap-4 h-fit max-h-[350px] md:max-h-[500px] [&_div]:max-h-[350px] md:[&_div]:max-h-[500px]"
+					className="relative isolate grid grid-cols-[auto,1fr] gap-4 h-fit max-h-[350px] md:max-h-[500px] [&_div]:max-h-[350px] md:[&_div]:max-h-[500px]"
 					infinite
 					isPlaying
 					isIntrinsicHeight

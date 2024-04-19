@@ -188,7 +188,7 @@ button:disabled {
 	height: calc(var(--height) * 2);
 	background-color: white;
 	inset-inline: 0;
-	z-index: 9999999999999999999999;
+	z-index: 9;
 }
 .carousel.hero::before {
 	clip-path: ellipse(50% 10% at 50% 0%);
