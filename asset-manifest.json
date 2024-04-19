@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pattern-room/static/css/main.7466d007.css",
-    "main.js": "/pattern-room/static/js/main.d75d010d.js",
+    "main.css": "/pattern-room/static/css/main.1339fd67.css",
+    "main.js": "/pattern-room/static/js/main.b8eb1574.js",
     "static/media/hero-1.png": "/pattern-room/static/media/hero-1.87866588991b1e0c9080.png",
     "static/media/youtube-placeholder.png": "/pattern-room/static/media/youtube-placeholder.714b60701137a030118d.png",
     "static/media/testimonials.png": "/pattern-room/static/media/testimonials.e9d5bef750f1f4bd515b.png",
@@ -42,11 +42,11 @@
     "static/media/down-arrow.svg": "/pattern-room/static/media/down-arrow.b4328d77b51ca785bf3da7f5a6cb8ead.svg",
     "static/media/up-arrow.svg": "/pattern-room/static/media/up-arrow.9916dce7f26e9bfa14c3eae60a231375.svg",
     "static/media/add.svg": "/pattern-room/static/media/add.c2bfa58b63c4d2b3f31712d9ebd40e60.svg",
-    "main.7466d007.css.map": "/pattern-room/static/css/main.7466d007.css.map",
-    "main.d75d010d.js.map": "/pattern-room/static/js/main.d75d010d.js.map"
+    "main.1339fd67.css.map": "/pattern-room/static/css/main.1339fd67.css.map",
+    "main.b8eb1574.js.map": "/pattern-room/static/js/main.b8eb1574.js.map"
   },
   "entrypoints": [
-    "static/css/main.7466d007.css",
-    "static/js/main.d75d010d.js"
+    "static/css/main.1339fd67.css",
+    "static/js/main.b8eb1574.js"
   ]
 }
